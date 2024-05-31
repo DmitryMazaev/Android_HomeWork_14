@@ -33,7 +33,7 @@ class FirstFragment : Fragment() {
         val searchApi: SearchApi = retrofit.create(SearchApi::class.java)
         val person = searchApi.getPerson()
         binding.textviewFirst.text = person.email
-        
+
         /*val personAdapter = Gson().getAdapter(PersonModel::class.java)
         val personModel: PersonModel = personAdapter.fromJson(jsonCat)
         binding.textviewFirst.text = personModel.toString()*/
